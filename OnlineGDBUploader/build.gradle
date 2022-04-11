@@ -1,0 +1,27 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.6.20'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
+}
+
+group 'cl.franciscosolis'
+version '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.6.20'
+    implementation 'com.google.code.gson:gson:2.9.0'
+}
+
+shadowJar {
+    mergeServiceFiles()
+    exclude('**/*.kotlin_metadata', '**/*.kotlin_builtins')
+
+    archiveBaseName.set('Uploader')
+    archiveClassifier.set('')
+    manifest {
+        attributes 'Main-Class': 'cl.franciscosolis.onlinegdbuploader.MainKt'
+    }
+}
