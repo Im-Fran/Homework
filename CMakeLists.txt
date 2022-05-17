@@ -27,3 +27,11 @@ add_executable(G2_Ejem_3 Guias/Guia2/Ejemplo_3.c)
 
 add_executable(G2_Ej_A Guias/Guia2/Ejercicio_a.c)
 add_executable(G2_Ej_B Guias/Guia2/Ejercicio_b.c)
+
+# Talleres #
+
+# Ejercicios de Taller
+add_executable(EjercicioTaller1 Talleres/Ejercicios/EjercicioTaller1.c)
+
+# Talleres
+add_executable(Taller1 Talleres/Taller1.c)
