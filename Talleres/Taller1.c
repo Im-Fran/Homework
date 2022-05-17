@@ -1,8 +1,8 @@
 /* 
     Integrante 1: Mauricio Reynoso
     Integrante 2: Francisco Solis
-    Profesor(a): Freddy Marambio
-    Sección: 1021
+    Profesor(a): Fredy Marambio
+    Sección: 304
     Compilador utilizado: repl.it
 */
 
@@ -34,6 +34,7 @@ int main() {
         sumaEdad = 0, // Suma de las edades de los asistentes que van al evento por 2 dias
         idMenor = 0, // Identificador de la persona con menor edad
         edadMenor = 0, // La menor edad entre todas las personas
+        diasMenor = 0, // La cantidad de dias que asistirá la persona con menor edad
         asistentesA2Dias = 0 // Cantidad de personas que asisten 2 días
     ;
 
@@ -85,6 +86,7 @@ int main() {
         if(edad < edadMenor || edadMenor == 0) {
             idMenor = identificador;
             edadMenor = edad;
+            diasMenor = numeroDias;
         }
 
         printf("\n\n");
@@ -100,9 +102,8 @@ int main() {
         printf("\nPromedio de edad de quienes asistieron 2 días: %.2f", promedioEdad);
     }
     printf("\nRecaudación: $%d Pesos", recaudado);
-    printf("\nLa persona de menor edad tiene ID: %d y su edad es %d", idMenor, edadMenor);
+    printf("\nLa persona de menor edad tiene ID: %d y asistirá durante es %d día(s)", idMenor, diasMenor);
     printf("\n===============\n");
 
     return 0;
 }
-
