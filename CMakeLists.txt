@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.15)
 project(Homework C)
 
 set(CMAKE_C_STANDARD 11)
@@ -35,3 +35,33 @@ add_executable(EjercicioTaller1 Talleres/Ejercicios/EjercicioTaller1.c)
 
 # Talleres
 add_executable(Taller1 Talleres/Taller1.c)
+
+# Clases #
+
+## 18.04.2022 
+# Ejercicio 6
+add_executable(Clase_18_04_2022 Clases/18.04.2022/Ejercicio6.c)
+
+## 19.04.2022
+# Funciones.c
+add_executable(Clase_19_04_2022 Clases/19.04.2022/Funciones.c)
+# FuncionesMatematicas
+add_executable(Clase_19_04_2022_Matematicas Clases/19.04.2022/FuncionesMatematicas.c)
+
+## 17.05.2022
+# PerimetroAreaCircunferenciaConFunciones
+add_executable(Clase_17_05_2022 Clases/17.05.2022/PerimetroAreaCircunferenciaConFunciones.c)
+
+## 23.5.2022
+# Ejercicio 2
+add_executable(Clase_23_05_2022 Clases/23.5.2022/Ejercicio2.c)
+# Ejercicio 3
+add_executable(Clase_23_05_2022_Ejercicio3 Clases/23.5.2022/Ejercicio3.c)
+# Ejercicio 4
+add_executable(Clase_23_05_2022_Ejercicio4 Clases/23.5.2022/Ejercicio4.c)
+# TipoDeTriangulo
+add_executable(Clase_23_05_2022_TipoDeTriangulo Clases/23.5.2022/TipoDeTriangulo.c)
+
+## 30.05.2022
+# Ejercicio 4
+add_executable(Clase_30_05_2022 Clases/30.05.2022/Ejercicio4.c)
