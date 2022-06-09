@@ -74,7 +74,7 @@ int main() {
 		// Solicitar edad
 		printf("Ingrese la edad: ");
 		scanf("%d", &edad);
-		while(edad <= 0) {
+		while(edad <= 0 || edad >= 135) { // Si la edad es menor a 0 o mayor a 135 pedir de nuevo
             flushInput();
             printf("Error... Ingrese una edad valida: ");
             scanf("%d", &edad);
