@@ -2,7 +2,7 @@
     Integrante: Francisco Solis
     Profesor(a): Fredy Marambio
     Sección: 304
-    Compilador utilizado: onlinegdb.coms
+    Compilador utilizado: onlinegdb.com
 */
 
 #include <stdio.h>
