@@ -35,6 +35,8 @@ add_executable(EjercicioTaller1 Talleres/Ejercicios/EjercicioTaller1.c)
 
 # Talleres
 add_executable(Taller1 Talleres/Taller1.c)
+add_executable(Taller2 Talleres/Taller2.c)
+add_executable(Taller3 Talleres/Taller3.c)
 
 # Clases #
 
