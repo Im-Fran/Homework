@@ -96,10 +96,13 @@ int main() {
     scanf("%d", &personas);
     for(int i = 0; i < personas; i++) {
         printf("\n> Vamos a calcular el IMC de la persona #%d:\n", i + 1);
+        // Obtener datos
         int edad = obtenerEdad();
         float peso = obtenerPeso();
         float estatura = obtenerEstatura();
         float imc = calculoIMC(peso, estatura);
+        
+        // Calculo de riesgo de enfermedades coronarias
         char *riesgo = "";
         if(imc < 22.0) {
             if(edad < 45) {
@@ -119,9 +122,11 @@ int main() {
             }
         }
 
+        // Mostrar resultados
         printf(">> IMC: %.1f\n", imc);
         printf(">> Riesgo de enfermedades coronarias: %s\n\n", riesgo);
 
+        // Asignacion de datos para estadisticas de categorias de edad, promedios y datos de peso.
         if(edad >= 0 && edad <= 12) {
             cantidadNinios++;
             pesoNinios += peso;
@@ -161,14 +166,17 @@ int main() {
         }
     }
 
+    // Calculo de porcentajes
     porcentajeBajo = (cantidadBajo * 100) / personas;
     porcentajeMedio = (cantidadMedio * 100) / personas;
     porcentajeAlto = (cantidadAlto * 100) / personas;
 
+    // Calculo de promedios de peso
     pesoNinios = pesoNinios / ((float) cantidadNinios);
     pesoJovenes = pesoJovenes / ((float) cantidadJovenes);
     pesoAdultos = pesoAdultos / ((float) cantidadAdultos);
 
+    // Mostrar datos en forma de tabla
     printf("\t\t ** TABLA DE ESTADISTICAS (IMC) **\n");
     printf("\t\t   > Tamaño de la muestra: %d <\n\n", personas);
     printf("Categoria \t Cantidad \t Peso Promedio \t Peso Min. \t Peso Max.\n");
