@@ -1,5 +1,5 @@
 /**
- * Created by Francisco Solis at 2020-05-23
+ * Created by Francisco Solis at 2022-05-23
  * 
  * Escribir una función que retorne la cantidad de veces que se debe restar un valor de a un entero positvo n hasta tomar el primer valor negativo.
  */

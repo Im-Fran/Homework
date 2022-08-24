@@ -1,5 +1,5 @@
 /**
- * Created by Francisco Solis at 2020-05-30
+ * Created by Francisco Solis at 2022-08-24
  * 
  * Definir una funcion "oso", que sume los digitos pares de un numero entero ingresado y retorne la suma
  */

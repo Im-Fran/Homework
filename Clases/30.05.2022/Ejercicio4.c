@@ -1,5 +1,5 @@
 /**
- * Created by Francisco Solis at 2020-05-30
+ * Created by Francisco Solis at 2022-05-30
  * 
  * Un teatro otorga descuentos segun la edad del cliente, se pide determinar la cantidad de dinero que el teatro deja
  * de percibir por cada uno de las categorías. Tomar en cuenta que los niños menores a 5 años no pueden entrar al teatro

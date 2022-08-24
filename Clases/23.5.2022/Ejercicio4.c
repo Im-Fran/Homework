@@ -1,5 +1,5 @@
 /**
- * Created by Francisco Solis at 2020-05-23
+ * Created by Francisco Solis at 2022-05-23
  *
  * Implementar una función que retorne la suma de los dígitos de un numero entero positivo N
  */

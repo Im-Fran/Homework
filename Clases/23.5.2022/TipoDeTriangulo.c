@@ -1,5 +1,5 @@
 /**
- * Created by Francisco Solis at 2020-05-23
+ * Created by Francisco Solis at 2022-05-23
  * 
  * Escribir una función que valide si 3 longitudes a,b,c forman o no un triángulo y, en caso afirmativo, indicar si es equilatero, isoceles, o escaleno. (Si no es un triángulo, retornar 0. Si es equilatero 1, si es isoceles 2 y escaleno 3).
  */
