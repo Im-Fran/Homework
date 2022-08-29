@@ -5,6 +5,7 @@
  */
 
 #include <stdio.h>
+#include <stdbool.h>
 
 bool esTriangulo(float lado1, float lado2, float lado3) {
     return lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1; // Revisar si es un triangulo
