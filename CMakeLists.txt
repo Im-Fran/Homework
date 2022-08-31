@@ -24,12 +24,12 @@ add_executable(G2_Ej_B Guias/Guia2/Ejercicio_b.c)
 # Talleres #
 
 # Ejercicios de Taller
-add_executable(Sem1_EjercicioTaller1 Talleres/Ejercicios/EjercicioTaller1.c)
+add_executable(Sem1_EjercicioTaller1 Talleres/Semestre1/Ejercicios/EjercicioTaller1.c)
 
 # Talleres
-add_executable(Sem1_Taller1 Talleres/Taller1.c)
-add_executable(Sem1_Taller2 Talleres/Taller2.c)
-add_executable(Sem1_Taller3 Talleres/Taller3.c)
+add_executable(Sem1_Taller1 Talleres/Semestre1/Taller1.c)
+add_executable(Sem1_Taller2 Talleres/Semestre1/Taller2.c)
+add_executable(Sem1_Taller3 Talleres/Semestre1/Taller3.c)
 
 # Clases #
 add_executable(Clase_18_04_22_Ejercicio6 Clases/18.04.2022/Ejercicio6.c)
