@@ -1,18 +1,6 @@
 /*
  * Integrantes: Benjamín Farías y Francisco Solís
- *
- * 1. Función que retorne 1 si un número n es Encuadrado y 0 en caso contrario.
- *    - Número Encuadrado: aquel que termina con el cuadrado de su primer dígito. Por ejemplo, 78249.
- *
- * 2. Función que imprima cada número Disparado presente en el intervalo [2^12, 2^16].
- *    - Número Disparado: aquel número impar que comienza con un dígito par. Por ejemplo, 24785.
- *
- * 3. Función que retorne 1 si un número n es Sumariado y 0 en caso contrario.
- *    - Número Sumariado: aquel cuyos dígitos del extremo derecho representan la suma de todos sus dígitos. Por ejemplo, 476129.
- *
- * 4. Función que imprima cada número Inclinado presente en el intervalo [2^8, 2^16].
- *    - Número Inclinado: aquel cuyos dígitos están dispuestos en orden descendente de izquierda a derecha. Por ejemplo, 974310.
- *
+ * Link Video Youtube: https://youtu.be/UyumedIf5Zw
  */
 #include <stdio.h>
 #include <math.h>
