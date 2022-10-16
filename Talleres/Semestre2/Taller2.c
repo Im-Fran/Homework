@@ -1,5 +1,6 @@
 /**
  * Created by Francisco Solis Maturana on 14-10-2022.
+ * Video: https://youtu.be/BRuyu-kCfpg
  *
  *  - Número Descuadrado: aquel que empieza con el cuadrado de su último dígito. Por ejemplo, 493827
  *  - Número Reparado: aquel número par que comienza con un dígito impar. Por ejemplo, 347216.
