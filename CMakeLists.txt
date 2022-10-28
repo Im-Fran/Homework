@@ -51,6 +51,12 @@ add_executable(Clase_29_08_22_Ejercicio3 Clases/29.8.2022/Ejercicio3.c)
 add_executable(Clase_29_08_22_Ejercicio4 Clases/29.8.2022/Ejercicio4.c)
 add_executable(Clase_29_08_22_Ejercicio5 Clases/29.8.2022/Ejercicio5.c)
 add_executable(Clase_31_08_22_Ejercicio5 Clases/31.8.2022/Ejercicio1.c)
+add_executable(Clase_17_10_22_Ejercicio1 Clases/17.10.2022/Ejercicio1.c)
+add_executable(Clase_17_10_22_Ejercicio2 Clases/17.10.2022/Ejercicio2.c)
+add_executable(Clase_17_10_22_Ejercicio3 Clases/17.10.2022/Ejercicio3.c)
+add_executable(Clase_24_10_22_Ejercicio1 Clases/24.10.2022/Ejercicio1.c)
+add_executable(Clase_26_10_22_Ejercicio1 Clases/26.10.2022/Ejercicio1.c)
+add_executable(Clase_26_10_22_Ejercicio2 Clases/26.10.2022/Ejercicio2.c)
 
 
 ## LIBS ##
