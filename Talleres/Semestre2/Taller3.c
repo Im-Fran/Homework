@@ -44,11 +44,10 @@ void mostrarCadena(cadena c);
 int esValida(cadena c);
 
 int main() {
-
     int opcion;
     cadena c;
     do {
-        // Limpiar la pantalla
+        // Menu de Opciones
         printf("\n\nMenú de opciones: \n");
         printf("1. Crear cadena \n");
         printf("2. Proteger cadena \n");
@@ -56,26 +55,26 @@ int main() {
         printf("4. Salir \n");
         printf("Ingrese una opción: ");
         scanf("%d", &opcion);
-        flushInput();
+        flushInput(); // Para evitar errores
         switch (opcion) {
-            case 1:
+            case 1: // Crear cadena
                 crearCadena(c);
                 mostrarCadena(c);
                 break;
-            case 2:
+            case 2: // Proteger cadena
                 mostrarCadena(c);
                 protegerCadena(c);
                 mostrarCadena(c);
                 break;
-            case 3:
+            case 3: // Desproteger cadena
                 mostrarCadena(c);
                 desprotegerCadena(c);
                 mostrarCadena(c);
                 break;
-            case 4:
+            case 4: // Salir
                 printf("Saliendo del programa... \n");
                 break;
-            default:
+            default: // Opcion invalida
                 printf("Opción inválida \n");
                 break;
         }
@@ -85,9 +84,25 @@ int main() {
 
 void crearCadena(cadena c) {
     do {
-        printf("\nIngrese una cadena de 8 a 16 caracteres (Solo mayusculas y minusculas!): ");
+        printf("\nIngrese una cadena de 8 a 16 caracteres (Solo mayúsculas y minúsculas!): ");
         fgets(c, 16, stdin);
-    } while (!esValida(c));
+    } while (!esValida(c)); // Mientras no sea valida, pedir de nuevo
+}
+
+int esValida(cadena c) {
+    if(strlen(c) < 8 || strlen(c) > 16) { // Si la longitud es menor a 8 o mayor a 16, no es válida
+        printf("La cadena debe tener entre 8 y 16 caracteres!\n");
+        return 0;
+    }
+
+    for(int i = 0; i < strlen(c)-1; i++) { // Se resta 1 para no contar el \0
+        if (c[i] < 65 || c[i] > 90 && c[i] < 97 || c[i] > 122) { // Si el character no es una letra, no es válida
+            printf("La cadena solo puede contener letras!\n");
+            return 0;
+        }
+    }
+
+    return 1;
 }
 
 void protegerCadena(cadena c) {
@@ -121,12 +136,12 @@ void desprotegerCadena(cadena c) {
         if(protegido >= 65 && protegido <= 90) {
             // Revisa si el número es menor a 65
             if(original < 65) {
-                original = original + 26;
+                original = original + 26; // Da la vuelta hasta el inicio de las letras mayúsculas
             }
         } else if(protegido >= 97 && protegido <= 122) { // Es minúscula
             // Revisa si el número es menor a 97
             if(original < 97) {
-                original = original + 26;
+                original = original + 26; // Da la vuelta hasta el inicio de las letras minúsculas
             }
         }
 
@@ -135,22 +150,6 @@ void desprotegerCadena(cadena c) {
 }
 
 void mostrarCadena(cadena c) {
-    printf("\nMuestra de cadena actual: %s", c);
-}
-
-int esValida(cadena c) {
-    if(strlen(c) < 8 || strlen(c) > 16) {
-        printf("La cadena debe tener entre 8 y 16 caracteres!\n");
-        return 0;
-    }
-
-    for(int i = 0; i < strlen(c)-1; i++) { // Se resta 1 para no contar el \0
-        if (c[i] < 65 || c[i] > 90 && c[i] < 97 || c[i] > 122) {
-            printf("La cadena solo puede contener letras!\n");
-            return 0;
-        }
-    }
-
-    return 1;
+    printf("\nMuestra de cadena actual: %s", c); // %s para mostrar la cadena
 }
 
