@@ -24,11 +24,10 @@
 
 #include <stdio.h>
 #include <string.h>
-#include <stdlib.h>
 
 typedef char cadena[16];
 
-void flushInput() { // Limpia el cache del scanf (lo que puede causar loop infinito si por ejemplo esperas un int e ingresas un char)
+void flushInput() { // Limpia el caché del scanf (lo que puede causar loop infinito si por ejemplo esperas un int e ingresas un char)
     char c = '0';
     while ((c = getchar()) != '\n' && c != EOF) {}
 }
