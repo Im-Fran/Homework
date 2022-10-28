@@ -1,25 +1,6 @@
 /*
  * Created by Francisco Solis and Benjamín Farías on 28-10-2022.
- *
- * Con la finalidad de proteger información, cierta empresa ha decidido reemplazar las letras mayúsculas que conforman los mensajes
- * de texto enviados, por otras ubicadas 8 posiciones más adelante (en sentido circular) según el número correspondiente a la posición
- * de cada letra en la tabla ASCII. Por ejemplo, si el mensaje original a enviar es "SPARSEMATRIX" el mensaje protegido enviado es
- * "AXIZAMUIBZQF", utilizando el segmento de tabla ASCII correspondiente a las letras mayúsculas:
- *
- * A  B  C  D  E  F  G  H  I  J  K  L  M  N  O  P  Q  R  S  T  U  V  W  X  Y  Z
- * 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90
- *
- * A partir de lo anteriormente expresado se pide desarrollar, en lenguaje de programación C, una aplicación que cumpla, a lo menos,
- * con lo que a continuación se indica:
- *
- * - Definicion de las estructuras de datos adecuadas.
- * - Función que cree una cadena, de longitud minima 8 y maxima 16, con un texto original.
- * - Función que, a partir de la cadena original, genere la cadena protegida.
- * - Función que, a partir de la cadena protegida, genere la cadena original.
- * - Función que despliegue en pantalla una cadena. Aplicarla antes y después de usar las funciones anteriores.
- * - Programa principal que, mediante un menú, llame organizadamente a las funciones anteriores.
- * - Autodocumentación mediante un video explicativo de una de las funciones implementadas el cual no debe exceder
- *   los 3 minutos y debe contener rostro y voz.
+ * Video: https://youtu.be/Y_WBSy4zWm4
  */
 
 #include <stdio.h>
