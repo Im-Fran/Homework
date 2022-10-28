@@ -77,7 +77,7 @@ int main() {
                 printf("Opción inválida \n");
                 break;
         }
-    } while (opcion != 5);
+    } while (opcion != 4);
     return 0;
 }
 
