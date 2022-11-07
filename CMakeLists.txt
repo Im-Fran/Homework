@@ -60,6 +60,8 @@ add_executable(Clase_26_10_22_Ejercicio2 Clases/26.10.2022/Ejercicio2.c)
 add_executable(Clase_02_11_22_Ejercicio1 Clases/02.11.2022/Ejercicio1.c)
 add_executable(Clase_07_11_22_Ejercicio1 Clases/07.11.2022/Ejercicio1.c)
 add_executable(Clase_07_11_22_Ejercicio2 Clases/07.11.2022/Ejercicio2.c)
+add_executable(Clase_07_11_22_Ejercicio3 Clases/07.11.2022/Ejercicio3.c)
+add_executable(Clase_07_11_22_Ejercicio4 Clases/07.11.2022/Ejercicio4.c)
 
 
 ## LIBS ##
