@@ -15,6 +15,10 @@ void llenarVector(vector v, int n, int i);
 
 void imprimirVector(vector v, int n, int i);
 
+int sumarVector(vector v, int n, int i);
+
+void printEdificio(int n);
+
 int main() {
     vector v;
     int n;
@@ -22,6 +26,7 @@ int main() {
     scanf("%d", &n);
     llenarVector(v, n, 0);
     imprimirVector(v, n, 0);
+    printf("\n\nLa suma de los elementos del vector es %d", sumarVector(v, n, 0));
     return 0;
 }
 
@@ -29,7 +34,7 @@ void llenarVector(vector v, int n, int i) {
     if (i == n) {
         return;
     }
-    v[i] = numeroAleatorio(100, 999);
+    v[i] = numeroAleatorio(0, 9);
     llenarVector(v, n, i + 1);
 }
 
@@ -44,4 +49,12 @@ void imprimirVector(vector v, int n, int i) {
 
     printf("%d ", v[i]);
     imprimirVector(v, n, i + 1);
+}
+
+int sumarVector(vector v, int n, int i) {
+    if (i == n) {
+        return 0;
+    }
+    return v[i] + sumarVector(v, n, i + 1);
+
 }
