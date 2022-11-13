@@ -26,7 +26,7 @@ typedef struct {
 typedef struct {
     int pisos; // Cantidad de pisos
     int departamentos; // Cantidad de departamentos por piso
-    Departamento edificio[100][100]; // Arreglo bidimensional de departamentos
+    Departamento edificio[50][50]; // Arreglo bidimensional de departamentos
 } Edificio;
 
 void crearEdificio(Edificio *edificio, int pisos, int departamentos);
@@ -81,7 +81,7 @@ void crearEdificio(Edificio *edificio, int pisos, int departamentos) {
 void asignarNumeroDepartamento(Edificio *edificio) {
     int numero = 1;
     for (int i = 0; i < edificio->pisos; i++) {
-        for (int j = 0; j < edificio->departamentos + 1; j++) { // Agrega uno para saltar el departamento
+        for (int j = 0; j < edificio->departamentos; j++) {
             if(j != 10) {
                 edificio->edificio[i][j].numero = numero;
                 edificio->edificio[i][j].superficie = 0;
