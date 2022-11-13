@@ -1,5 +1,5 @@
 /*
- * Created by Francisco Solis Mat y Benjamín Farías on 12/11/2022
+ * Created by Francisco Solís y Benjamín Farías on 12/11/2022
  *
  * Un  edificio  consta  de  cierto  número  de  pisos  y  determinada  cantidad  de  departamentos  por  piso,  debido  a  lo  cual  se  utiliza  un
  * arreglo bidimensional para su representación. Como datos relevantes de un departamento se consideran el número, la superficie
@@ -41,20 +41,22 @@ int main() {
     int opcion;
     // Menú
     do {
-        printf("Menú:\n");
+        printf("Menú de opciones:\n");
         printf("1. Crear edificio\n");
-        printf("2. Asignar número de departamento\n");
+        printf("2. Asignar datos de departamentos\n");
         printf("3. Imprimir edificio\n");
         printf("4. Salir\n");
-        printf("Ingrese una opción: ");
+        printf("Ingrese una opción:\n> ");
         scanf("%d", &opcion);
 
         switch (opcion) {
             case 1:
                 crearEdificio(&edificio, 3, 4);
+                printf("Edificio creado con éxito");
                 break;
             case 2:
                 asignarNumeroDepartamento(&edificio);
+                printf("Número de departamento asignado con éxito");
                 break;
             case 3:
                 imprimirEdificio(&edificio);
@@ -66,6 +68,8 @@ int main() {
                 printf("Opción inválida");
                 break;
         }
+
+        printf("\n\n");
     }while (opcion != 4);
 }
 
@@ -80,6 +84,8 @@ void asignarNumeroDepartamento(Edificio *edificio) {
         for (int j = 0; j < edificio->departamentos + 1; j++) { // Agrega uno para saltar el departamento
             if(j != 10) {
                 edificio->edificio[i][j].numero = numero;
+                edificio->edificio[i][j].superficie = 0;
+                edificio->edificio[i][j].valorUF = 0;
             }
             numero++;
         }
@@ -87,9 +93,14 @@ void asignarNumeroDepartamento(Edificio *edificio) {
 }
 
 void imprimirEdificio(Edificio *edificio) {
-    for (int i = 0; i < edificio->pisos; i++) {
-        for (int j = 0; j < edificio->departamentos; j++) {
-            printf("Departamento %d, piso %d \n", edificio->edificio[i][j].numero, i + 1);
+    printf("Edificio:\n");
+    for (int piso = 0; piso < edificio->pisos; piso++) {
+        printf("== Piso %d ==\n", piso + 1);
+        for (int departamento = 0; departamento < edificio->departamentos; departamento++) {
+            printf("- Departamento #%d\n", edificio->edificio[piso][departamento].numero);
+            printf("\t|-- Superficie: %d m2\n", edificio->edificio[piso][departamento].superficie);
+            printf("\t|-- Valor: %d UF\n", edificio->edificio[piso][departamento].valorUF);
         }
+        printf("\n");
     }
 }
