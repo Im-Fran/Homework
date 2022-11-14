@@ -1,18 +1,6 @@
 /*
  * Created by Francisco Solís y Benjamín Farías on 12/11/2022
- *
- * Un  edificio  consta  de  cierto  número  de  pisos  y  determinada  cantidad  de  departamentos  por  piso,  debido  a  lo  cual  se  utiliza  un
- * arreglo bidimensional para su representación. Como datos relevantes de un departamento se consideran el número, la superficie
- * en m2 y su valor en UF. El número de departamento es función de los índices de piso y departamento; por ejemplo, el departamento
- * 34  está  situado  en  el  tercer  piso  (índice  2),  cuarto  departamento  (índice  3).  Sin  embargo,  el  número  de  departamento  no  se
- * encuentra explícitamente asignado.
- *
- * - Definición de las estructuras de datos tanto de departamento como del edificio.
- * - Función que cree un edificio de tres pisos y cuatro departamentos por piso, sin asignar el número.
- * - Función que asigne el respectivo número a cada departamento del edificio.
- * - Función que despliegue en pantalla los datos de todos y cada uno de los departamentos del edificio.
- * - Programa principal que, mediante un menú, llame organizadamente a las funciones anteriores.
- * - Autodocumentación mediante un video explicativo de una de las funciones implementadas el cual no debe exceder los 3 minutos y debe contener rostro y voz.
+ * Video: https://youtu.be/Xi3Ta2xZZmo
  */
 
 #include <stdio.h>
@@ -79,14 +67,13 @@ void crearEdificio(Edificio *edificio, int pisos, int departamentos) {
 }
 
 void asignarNumeroDepartamento(Edificio *edificio) {
-    int numero = 1;
     for (int i = 0; i < edificio->pisos; i++) {
+        int base = (i + 1) * 10; // Piso 1 = 10; Piso 2 = 20; Piso 3 = 30
+        int numero = 1;
         for (int j = 0; j < edificio->departamentos; j++) {
-            if(j != 10) {
-                edificio->edificio[i][j].numero = numero;
-                edificio->edificio[i][j].superficie = 0;
-                edificio->edificio[i][j].valorUF = 0;
-            }
+            edificio->edificio[i][j].numero = base + numero; // Piso 1: 10 + 1 = 11; Piso 2: 20 + 1 = 21; Piso 3: 30 + 1 = 31
+            edificio->edificio[i][j].superficie = 0;
+            edificio->edificio[i][j].valorUF = 0;
             numero++;
         }
     }
