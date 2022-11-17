@@ -67,6 +67,7 @@ add_executable(Clase_07_11_22_Ejercicio4 Clases/07.11.2022/Ejercicio4.c)
 # Ayudantías
 add_executable(Ayudantia_10_11_22_Ejercicio1 Ayudantias/10.11.2022/Ejercicio1.c)
 add_executable(Ayudantia_17_11_22_Ejercicio1 Ayudantias/17.11.2022/Ejercicio1.c)
+add_executable(Ayudantia_17_11_22_Ejercicio2 Ayudantias/17.11.2022/Ejercicio2.c)
 
 
 ## LIBS ##
